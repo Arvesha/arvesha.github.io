@@ -8,6 +8,34 @@ The official website for **Arvesha Intelligence**, a deep-technology AI company 
 
 ---
 
+## ⚠️ Fix: GoDaddy Template Showing Instead of GitHub Pages
+
+If you see a GoDaddy parking page at `arveshaintelligence.com` instead of this website, you need to update the DNS records in your GoDaddy account to point the domain to GitHub Pages.
+
+### Steps to fix in GoDaddy DNS Manager
+
+1. Log in to [GoDaddy](https://dcc.godaddy.com) and go to **My Products → Domains**.
+2. Click **DNS** next to `arveshaintelligence.com`.
+3. **Delete** any existing `A` records for the `@` host (these currently point to GoDaddy's servers).
+4. **Add** the following DNS records:
+
+| Type  | Name | Value               | TTL  |
+|-------|------|---------------------|------|
+| A     | @    | 185.199.108.153     | 1 hour |
+| A     | @    | 185.199.109.153     | 1 hour |
+| A     | @    | 185.199.110.153     | 1 hour |
+| A     | @    | 185.199.111.153     | 1 hour |
+| CNAME | www  | arvesha.github.io.  | 1 hour |
+
+5. Save changes and wait up to 48 hours for DNS propagation (usually much faster — often under 1 hour).
+6. Once DNS has propagated, go to the repository **Settings → Pages** on GitHub and:
+   - Ensure the custom domain field shows `arveshaintelligence.com`
+   - Enable **Enforce HTTPS**
+
+> **Why this happens:** GoDaddy parks newly registered or unconfigured domains on their own servers by default, showing their template page. The fix is to redirect the domain's DNS to GitHub's servers using the A records above.
+
+---
+
 ## Project Purpose
 
 Arvesha Intelligence develops:

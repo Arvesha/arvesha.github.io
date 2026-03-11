@@ -752,6 +752,7 @@ img {
   font-weight: 700;
   background: linear-gradient(135deg, var(--color-accent), #7c3aed);
   color: #fff;
+  object-fit: cover;
 }
 
 .founder-name {

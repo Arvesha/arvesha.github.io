@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="#0f172a" rx="24"/>
+  <!-- Hexagon symbol -->
+  <polygon points="100,30 155,62.5 155,127.5 100,160 45,127.5 45,62.5"
+           fill="none" stroke="url(#logoGrad)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Inner neural node -->
+  <circle cx="100" cy="95" r="14" fill="url(#logoGrad)" opacity="0.9"/>
+  <!-- Neural connections -->
+  <line x1="100" y1="81" x2="100" y2="50" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="100" y1="109" x2="100" y2="140" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="88" y1="88" x2="60" y2="75" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="112" y1="88" x2="140" y2="75" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="88" y1="102" x2="60" y2="115" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="112" y1="102" x2="140" y2="115" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.5"/>
+  <!-- Outer nodes -->
+  <circle cx="100" cy="44" r="5" fill="#6366f1"/>
+  <circle cx="100" cy="146" r="5" fill="#6366f1"/>
+  <circle cx="55" cy="70" r="5" fill="#6366f1"/>
+  <circle cx="145" cy="70" r="5" fill="#6366f1"/>
+  <circle cx="55" cy="120" r="5" fill="#6366f1"/>
+  <circle cx="145" cy="120" r="5" fill="#6366f1"/>
+  <!-- Text -->
+  <text x="100" y="176" font-family="Inter, sans-serif" font-size="10" font-weight="700"
+        fill="#94a3b8" text-anchor="middle" letter-spacing="2">ARVESHA</text>
+</svg>
